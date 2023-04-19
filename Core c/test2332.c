@@ -1,15 +1,22 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
 int main() {
-
-    char ch;
-    ch = getche();
-    printf("\n");
-    putchar(ch);
-    printf("\nhello\n");
-
-    float a;
-    scanf("%f", &a);
-    printf("%.3f", a);
+	
+    int n;
+    scanf("%d", &n);
+   	int arr[n];
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    int f = 1;
+    for(int j = 0; j < n; j++)
+    {
+        f *= arr[j];
+    }
+	printf("%d", f);
     return 0;
 }
