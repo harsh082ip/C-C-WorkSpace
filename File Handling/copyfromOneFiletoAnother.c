@@ -11,7 +11,6 @@ int main()
     }
     else{
         ch = fgetc(fp);
-        printf("%c", ch);
         fl = fopen("file2.txt", "a");
         while(ch!=EOF)
         {
@@ -19,4 +18,6 @@ int main()
             ch = fgetc(fp);
         }
     }
+    fclose(fp);
+    fclose(fl);
 }
